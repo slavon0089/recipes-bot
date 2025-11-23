@@ -8,7 +8,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from dotenv import load_dotenv
-from openai import OpenAI
+import openai
 import pymorphy3
 morph = pymorphy3.MorphAnalyzer()
 
@@ -23,7 +23,7 @@ bot = Bot(
     parse_mode=ParseMode.MARKDOWN)
 
 dp = Dispatcher()
-client = OpenAI(api_key=OPENAI_KEY)
+openai.api_key = OPENAI_KEY
 
 
 # ------------------ LOAD RECIPES ----------------------
