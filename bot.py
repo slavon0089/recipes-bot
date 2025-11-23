@@ -21,9 +21,6 @@ OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 bot = Bot(
     token=TELEGRAM_BOT_TOKEN,
     parse_mode=ParseMode.MARKDOWN)
-    )
-
-
 
 dp = Dispatcher()
 client = OpenAI(api_key=OPENAI_KEY)
