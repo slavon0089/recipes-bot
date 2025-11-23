@@ -2,6 +2,9 @@ services:
   - type: worker
     name: recipe-bot
     env: python
+    region: frankfurt
+    plan: free
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: python bot.py
-    plan: free
+    autoDeploy: true
+
