@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message
-from aiogram.client.default import DefaultBotProperties
+from aiogram.client.bot import DefaultBotProperties
 from dotenv import load_dotenv
 from openai import OpenAI
 import pymorphy3
